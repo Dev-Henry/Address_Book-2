@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
-    <title>Address Book </title>
+    <title>Address Book</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,11 +10,88 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link href="/css/site.css" rel="stylesheet">
+
 </head>
 
-<body>
-       <div class="container">
+<body class="h-100">
+       <div class="container mt-3">
+        <h2 class="text-light">Address Book</h2>
+        <div class="p-3 border border-2 shadow-lg bg-light">
+            <form class="row g-3 p-2">
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid" src="/img/GirlOne_4x.png">
+                </div>
 
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="inputFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="inputLastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="inputLastName">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="inputEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="inputPhone " class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="inputPhone">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Dzorwulu">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label for="inputRegion" class="form-label">Region</label>
+                            <select id="inputRegion" class="form-select" id="inputRegion">
+                                <option selected>Choose...</option>
+                                <option value="GA">Greater Accra</option>
+                                <option value="ER">Eastern Region</option>
+                                <option value="SR">Savannah</option>
+                                <option value="UE">Upper East</option>
+                                <option value="CR">Central</option>
+                                <option value="AR">Ashanti</option>
+                                <option value="BA">Brong Ahafo</option>
+                                <option value="NR">Northern Region</option>
+                                <option value="UW">Upper West</option>
+                                <option value="VR">Volta Region</option>
+                                <option value="WR">Western Region</option>
+                                <option value="BE">Bono East</option>
+                                <option value="OR">Oti Region</option>
+                                <option value="WN">Western North</option>
+                                <option value="NE">North East</option>
+                                <option value="OR">Oti</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <label for="inputGPS" class="form-label">GPS</label>
+                            <input type="text" class="form-control" id="inputGPS">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkFamily">
+                                <label class="form-check-label" for="checkFamily">Family</label>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="button" class="btn btn-lg btn-primary">Save</button>
+                        </div>
+                </div>
+            </form>
+        </div>
        </div>
 
     <!-- Bootstrap JS -->
